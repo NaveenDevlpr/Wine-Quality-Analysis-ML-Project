@@ -1,7 +1,5 @@
-import pandas as pd
+import os
+from pathlib import Path
+import logging
 
-
-wine_data=pd.read_csv('WineQT.csv')
-
-first_five_row=wine_data.head()
-print(first_five_row)
+logging.basicConfig(level=logging.info, format='%(asctime)s - %(levelname)s - %(message)s')
